@@ -45,6 +45,21 @@ Useful variants:
 .\demo_run.ps1 -ExperimentName test_sac -StepsPerEpoch 500
 ```
 
+Run the complete demo from Linux/macOS shell:
+
+```bash
+chmod +x demo_run.sh
+./demo_run.sh --epochs 5 --plot-progress
+```
+
+Useful variants:
+
+```bash
+./demo_run.sh --epochs 10 --render-eval
+./demo_run.sh --epochs 10 --plot-progress --render-infer
+./demo_run.sh --experiment-name test_sac --steps-per-epoch 500
+```
+
 ### Case 1: basic training only
 
 This only trains SAC, evaluates at the end of each epoch, prints metrics to the
